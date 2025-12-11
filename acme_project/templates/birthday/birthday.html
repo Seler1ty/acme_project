@@ -1,9 +1,19 @@
-<!-- templates/birthday/birthday.html -->
-{% extends "base.html" %}
+<form>
+  <ul>
+    <li>
+      <label for="id_first_name">First name:</label>
+      <input type="text" name="first_name" maxlength="20" required id="id_first_name">
+    </li>
 
-{% block content %}
-  <form>
-    {{ form }}
-    <input type="submit" value="Submit">
-  </form>
-{% endblock %}
+    <li>
+      <label for="id_last_name">Last name:</label>
+      <input type="text" name="last_name" id="id_last_name">
+    </li>
+
+    <li>
+      <label for="id_birthday">Birthday:</label>
+      <input type="text" name="birthday" required id="id_birthday">
+    </li>
+  </ul>
+  <input type="submit" value="Submit">
+</form>
